@@ -1,3 +1,29 @@
+# Using Mask R-CNN to get Colorful People 
+This example uses Mask R-CNN to detect people and create a picture where a person is in colour while the background is in grayscale. 
+
+
+![](assets/sample_image.png)
+![](assets/sample_image_out.png)
+
+
+This is the same thing as [Mask-RCNN-Shiny](https://github.com/huuuuusy/Mask-RCNN-Shiny) except that this example takes pictures from the webcam on the PC.
+
+
+The code is found in the _samples_ folder. 
+* _colorful_people_demo.ipynb_ is an example that goes through the process step by step.
+* _cam_live.py_ shows pictures from the webcam (just to test that).
+* _colorful_people_live.py_ takes pictures from the webcam, runs R-CNN and makes a grayscale photo with a person in color.
+
+
+This project requires the _mask_rcnn_coco.h5_ weights to be in the _samples_ folder. The weights are found on the [Mask R-CNN v2.0 release](https://github.com/matterport/Mask_RCNN/releases/tag/v2.0)
+
+
+
+The text of the original readme from the Mask R-CNN project is found below.
+
+
+
+
 # Mask R-CNN for Object Detection and Segmentation
 
 This is an implementation of [Mask R-CNN](https://arxiv.org/abs/1703.06870) on Python 3, Keras, and TensorFlow. The model generates bounding boxes and segmentation masks for each instance of an object in the image. It's based on Feature Pyramid Network (FPN) and a ResNet101 backbone.
